@@ -1,24 +1,17 @@
-/* General */
+/*General*/
 
 * {
   padding: 0;
   margin: 0;
 }
-
 body {
-    font-family: Roboto, Viga;
+  font-family: Roboto, Viga;
+  animation: zooms 1.5s ease-in-out forwards;
 }
-
-/* Page Loader */
-
-#loader .top,
-#loader .bottom {
-  background-color: #472372;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 998;
-  overflow: hidden;
+@keyframes zooms {
+  0% {
+    margin: 1rem 0% 1rem 0%;
+  }
 }
 
 /*Loader*/
@@ -28,9 +21,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
+  z-index: 998;
   animation: slideUp ease 1.5s forwards;
-}
-
+  overflow: hidden;
 }
 @keyframes slideUp {
   from {transform: translateY(0%);}
@@ -42,8 +36,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
+  z-index: 998;
   animation: slideDown ease 1.5s forwards;
-
+  overflow: hidden;
 }
 @keyframes slideDown {
   from {transform: translateY(0%);}
@@ -51,7 +47,7 @@ body {
 }
 
 /* NAV */
-#nav-bar .navbar-brand{
+
 #nav-bar {
   min-height: 4.5rem;
   padding: 0rem 1rem;
@@ -59,19 +55,19 @@ body {
 
 /*Main*/
 
-/* Skills Section */
+/*Skills Section*/
 #blog {
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 #blog2 {
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 @media screen and (max-width: 768px) {
   #blog {
-    margin-top: 2rem;
+    margin-top: 0;
   }
   #blog2 {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 }
 /*Task Management*/
@@ -87,22 +83,23 @@ body {
   background-color: #FF6B6B;
 }
 
-/* Cards */
+/*Cards*/
+
 .card .card-header {
   background-color: #472372;
   color: white;
 }
 
-/* About Section */
+/*About*/
 #about-section {
   margin-top: 10rem;
 }
+
 #about-section ol {
   list-style-type: none;
 }
-
 #back-to-top {
-  display: inline-block;
+  display: inline-flex;
   text-decoration: none;
   border: .1rem solid;
   border-radius: 1rem;
@@ -114,11 +111,12 @@ body {
     transform: translate(0, -50%);
   }
 }
-/* Footer */
+
+/*Footer*/
+
 footer {
   background-color: #472372;
 }
-footer ul li img {
-  width: 40px;
-  height: 40px;
+footer img {
+  width: 50%;
 }
