@@ -1,4 +1,4 @@
-/*General*/
+/* General */
 
 * {
   padding: 0;
@@ -6,15 +6,13 @@
 }
 body {
   font-family: Roboto, Viga;
-  animation: zooms 1.5s ease-in-out forwards;
 }
-@keyframes zooms {
-  0% {
-    margin: 1rem 0% 1rem 0%;
-  }
+img {
+    width: 100%;
+    height: auto;
 }
 
-/*Loader*/
+/* Loader */
 #loader .top {
   background-color: #472372;
   position: fixed;
@@ -46,11 +44,11 @@ body {
   to {transform: translateY(100%);}
 }
 
-/* NAV */
+/* Nav */
 
 #nav-bar {
   min-height: 4.5rem;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
 }
 
 /*Main*/
@@ -70,15 +68,15 @@ body {
     margin-top: 0;
   }
 }
-/*Task Management*/
+/* Task Management */
 #task-management .card-header {
   background-color: #4A90E2;
 }
-/*Note-taking*/
+/* Note-taking */
 #note-taking .card-header {
   background-color: #50C878;
 }
-/*Project Management*/
+/* Project Management */
 #project-management .card-header {
   background-color: #FF6B6B;
 }
@@ -90,11 +88,11 @@ body {
   color: white;
 }
 
-/*About*/
+/* About */
 #about-section {
   margin-top: 10rem;
 }
-
+#about-section .card .card-body ol {
 #about-section ol {
   list-style-type: none;
 }
@@ -112,11 +110,12 @@ body {
   }
 }
 
-/*Footer*/
+/* Footer */
 
 footer {
   background-color: #472372;
 }
 footer img {
-  width: 50%;
+  width: 40px;
+  height: 40px;
 }
